@@ -44,6 +44,7 @@ import { RadioGroupComponent } from './form-controls/radio-group/radio-group.com
 import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
 import { SpinnerComponent } from './misce/spinner/spinner.component';
 import { LocalStorageInputComponent } from './form-controls/local-storage-input/local-storage-input.component';
+import { AutoCompleteComponent } from './form-controls/auto-complete/auto-complete.component';
 
 @NgModule({ declarations: [
         DateComponent,
@@ -54,6 +55,7 @@ import { LocalStorageInputComponent } from './form-controls/local-storage-input/
         SnackBarComponent,
         SpinnerComponent,
         LocalStorageInputComponent,
+        AutoCompleteComponent,
     ],
     exports: [
         MatToolbarModule,
