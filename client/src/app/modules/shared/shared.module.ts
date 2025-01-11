@@ -35,7 +35,6 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { CurrencyPipe } from '@angular/common';
 import { DateComponent } from './form-controls/date/date.component';
 import { InputComponent } from './form-controls/input/input.component';
@@ -88,7 +87,6 @@ import { LocalStorageInputComponent } from './form-controls/local-storage-input/
         MatAutocompleteModule,
         FormsModule,
         ReactiveFormsModule,
-        HttpClientModule,
         // exported components 
         DateComponent,
         InputComponent,
@@ -98,7 +96,9 @@ import { LocalStorageInputComponent } from './form-controls/local-storage-input/
         SnackBarComponent,
         RadioGroupComponent,
         LocalStorageInputComponent
-    ], imports: [CommonModule,
+    ], 
+    imports: [
+        CommonModule,
         MatToolbarModule,
         MatIconModule,
         MatMenuModule,
@@ -131,5 +131,9 @@ import { LocalStorageInputComponent } from './form-controls/local-storage-input/
         OverlayModule,
         MatAutocompleteModule,
         FormsModule,
-        ReactiveFormsModule], providers: [CurrencyPipe, provideHttpClient(withInterceptorsFromDi())] })
+        ReactiveFormsModule
+    ], 
+    providers: [
+        CurrencyPipe
+    ] })
 export class SharedModule { }
